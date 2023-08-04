@@ -1,0 +1,104 @@
+<div class="matches-container container ">
+    <div class="row">
+        <div class="col">
+            <div class="content">
+                <div class="main-heading">
+                    <h1 class="text-black pageHeading">April 2023</h1>
+                </div>
+                <div class="row">
+                    <div class="col-12" *ngFor="let match of matchesApril">
+                        <div class="result-box">
+                            <div class="match-type">
+                                <p>{{match.matchType}}</p>
+                            </div>
+                            <div class="match-result">
+                                <div class="date-top">
+                                    <p id="match-date">{{match.date}}</p>
+                                </div>
+                                <div class="scores-middle">
+                                    <div class="team1 team"><h3 id="teamName">{{match.teamOne}}</h3><h3 class="score-box s1">{{match.teamOneScore}}</h3></div>
+                                    <div class="team2 team"><h3 class="score-box s2">{{match.teamTwoScore}}</h3><h3 id="teamName">{{match.teamTwo}}</h3></div>
+                                </div>
+                                <div class="tab-box">
+                                    <div class="tab"></div>
+                                </div>
+                                <div class="location-bottom">
+                                    <p>{{match.location}}</p>
+                                </div>
+                            </div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-heading">
+                    <h1 class="text-black subHeadPadding">March 2023</h1>
+                </div>
+                <div class="row">
+                    <div class="col-12" *ngFor="let match of matchesMarch">
+                        <div class="result-box">
+                            <div class="match-type">
+                                <p>{{match.matchType}}</p>
+                            </div>
+                            <div class="match-result">
+                                <div class="date-top">
+                                    <p id="match-date">{{match.date}}</p>
+                                </div>
+                                <div class="scores-middle">
+                                    <div class="team1 team">
+                                        <h3 id="teamName">{{match.teamOne}}</h3>
+                                        <h3 class="score-box s1">{{match.teamOneScore}}</h3>
+                                    </div>
+                                    <div class="team2 team">
+                                        <h3 class="score-box s2">{{match.teamTwoScore}}</h3>
+                                        <h3 id="teamName">{{match.teamTwo}}</h3>
+                                    </div>
+                                </div>
+                                <div class="tab-box">
+                                    <div class="tab"></div>
+                                </div>
+                                <div class="location-bottom">
+                                    <p>{{match.location}}</p>
+                                </div>
+                            </div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-heading">
+                    <h1 class="text-black subHeadPadding">February 2023</h1>
+                </div>
+                <div class="row">
+                    <div class="col-12" *ngFor="let match of matchesFeb">
+                        <div class="result-box">
+                            <div class="match-type">
+                                <p>{{match.matchType}}</p>
+                            </div>
+                            <div class="match-result">
+                                <div class="date-top">
+                                    <p id="match-date">{{match.date}}</p>
+                                </div>
+                                <div class="scores-middle">
+                                    <div class="team1 team">
+                                        <h3 id="teamName">{{match.teamOne}}</h3>
+                                        <h3 class="score-box s1">{{match.teamOneScore}}</h3>
+                                    </div>
+                                    <div class="team2 team">
+                                        <h3 class="score-box s2">{{match.teamTwoScore}}</h3>
+                                        <h3 id="teamName">{{match.teamTwo}}</h3>
+                                    </div>
+                                </div>
+                                <div class="tab-box">
+                                    <div class="tab"></div>
+                                </div>
+                                <div class="location-bottom">
+                                    <p>{{match.location}}</p>
+                                </div>
+                            </div>
+                            <div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

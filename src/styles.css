@@ -1,0 +1,2612 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'ubuntu', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    overflow-x: hidden;
+    background-color: #002a36;
+    color:#151e2d;
+    line-height: 1.875;
+}
+
+/*-------**main formats**-------*/
+#goalie{
+    padding-top: 0;
+}
+.pageHeading{
+    padding-top: 50px;
+}
+
+.subHeadPadding{
+    padding-top: 30px;
+}
+.transitionSpeed{
+    transition: all .4s ease-in-out;
+}
+
+.container{
+    width: 100%;
+    padding: 4rem 0;
+}
+
+.content{
+    max-width: 1500px;
+    width: 93%;
+    margin: 0 auto;
+}
+
+p{
+    font-size: 1em;
+    font-weight: 200;
+}
+
+.main-heading h1{
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    font-family: 'Bebas Neue';
+    letter-spacing: .1rem;
+    font-size: 2.3rem;
+}
+
+#fullStop{
+    color:#0E8FB4;
+    font-size: 1.5em;
+}
+
+.btnAll{
+    background-color: #0E8FB4;
+    color: #fff;
+    border: none;
+    outline: none;
+    padding: .2rem .5rem;
+    font-size: 1em;
+    border-radius: 7px;
+    z-index: 990;
+    text-transform: uppercase;
+}
+
+.btnAll:hover{
+    background-color: #111;
+    color: #0ba8d3;
+}
+
+/*-------**main formats**-------*/
+
+/*----------**Navbar**----------*/
+.navbar {
+    background-color: #053644;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    max-width: 1700px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 4em;
+    padding: 0 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: translate3d(0,0,0);
+}
+
+.navbar .navbar-logo img {
+    width: 3.5rem;
+    height: 3.5rem;
+    object-fit: contain;
+}
+
+/*----- Nav: Menu -----*/
+.navbar .navbar-nav {
+    display: flex;
+    margin-bottom: 0;
+    flex-direction: row;
+}
+
+.navbar .navbar-nav .nav-item {
+    list-style: none;
+}
+
+.navbar .navbar-nav .nav-link {
+    padding: 3px 1rem;
+    font-size: .8em;
+    color: #fff;
+    display: block;
+    text-transform: uppercase;
+}
+
+.navbar .navbar-nav .shopItem{
+    background-color: #000;
+    border-radius: 10px;
+    border-bottom: 2px solid #053644;
+}
+.navbar .navbar-nav .nav-link:hover{
+    color: #e7e7e7;
+    border-bottom: 2px solid #00FF6F;
+}
+
+/*----- Nav: Menu -----*/
+
+/*----- Nav: Socials -----*/
+.navbar .socials-container {
+    display: flex;
+}
+
+.navbar .socials-container .socials-box {
+    width: 1.7rem;
+    height: 1.7rem;
+    margin-left: .7rem;
+}
+
+.navbar .socials-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    vertical-align: top;
+}
+
+.navbar .socials-container img:hover{
+    transform: scale(1.04);
+}
+/*-------- Nav: Socials -----*/
+/*----- Nav: Hamburger ------*/
+.bar{
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    background-color: #fff;
+    display: block;
+}
+
+.hamburger{
+    display: none;
+}
+/*----- Nav: Hamburger ------*/
+/*----------**Navbar**----------*/
+
+/*----------**Banner**----------*/
+.banner-container {
+    background-image: url(/assets/img/mainback-3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    align-items: center;
+    height: 700px;
+}
+
+.banner-container .banner{
+    position: relative;
+    top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    max-width: 1300px;
+    width: 95%;
+}
+
+.banner-container .banner .text-box{
+    background: rgba(0, 0, 0, 0.5);
+    padding: 3rem 0;
+}
+
+.banner-container .banner .text-box h1{
+    letter-spacing: 0.3rem;
+    font-size: 5em;
+   
+}
+.banner-container .banner .text-box h1,
+.banner-container .banner .text-box h4{
+   color: #fff;
+   text-transform: uppercase;
+}
+/*----------**Banner**----------*/
+
+/*----------**AboutUs**---------*/
+.aboutUs-container{
+    background-image: url(/assets/img/b2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: contain;
+    background-position: top;
+}
+.aboutUs-container .abt-content{
+    margin-top: 1rem;
+}
+
+.aboutUs-container .abt-content .about-heading{
+    margin-bottom: 1rem;
+    font-size: 1.4em;
+}
+
+.aboutUs-container .img-box{
+    position: relative;
+    width: 25em;
+    left: 10%;
+}
+
+.aboutUs-container .img-box img{
+    width: 100%;
+   
+}
+
+.motto{
+    background-color: #000;
+    text-align: center;
+    align-items: center;
+}
+
+.motto h1{
+    margin-bottom: 0;
+    font-size: 2.7em;
+}
+
+.commas{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    margin: 0 .3rem;
+}
+/*----------**AboutUs**---------*/
+
+/*---------**Supporter**--------*/
+.supporter-container{
+    background-color: #fff;
+}
+.supporter-container .card{
+    width: 18rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    text-align: center;
+    box-shadow: 0 4px 9px rgb(214, 214, 214);
+}
+
+.supporter-container .row .content .row{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.btnViewShop{
+    margin-top: 3em;
+}
+
+/*---------**Supporter**--------*/
+
+/*---------**FirstTeam**--------*/
+.firstTeam-container{
+    background-image: url(/assets/img/firstTeamBack1.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        object-fit: cover;
+        background-attachment: fixed;
+}
+
+.firstTeam-container .splide{
+    margin-left: 2em;
+    margin-right: 2em;
+}
+
+.firstTeam-container .heading-w{
+    color: #fff; 
+}
+
+/*---------**FirstTeam**--------*/
+
+/*----------**Founder**---------*/
+.founderImages{
+    background-color: #fff;
+    padding: 0;
+}
+.founder-container{
+    background-color:#02485c;
+}
+
+.founder-container h1{
+    border-bottom: 2px solid #00FF6F;
+    width: 2%;
+}
+.mission-container .mission{
+    background-color: rgba(243, 243, 243, 0.9);
+}
+
+.founder-container .img-box {
+    position: relative;
+    width: 25em;
+    left: 10%;
+}
+
+.founder-container .img-box img {
+    width: 100%;
+   object-fit: cover;
+}
+
+.founderImages .img-box{
+    height: 14em;
+    width: 100%;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.founderImages .img-box img{
+    height: 12em;
+    padding: 20px;
+    width: 14em;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+    .founderImages .img-box {
+        height: 15em;
+        grid-template-columns: repeat(4, 1fr);
+   }
+/*----------**Founder**---------*/
+
+/*----------**Footer**----------*/
+.footer{
+    background-color: #001218;
+    color: #fff;
+    text-align: center;
+    max-width: 1700px;
+    margin: 0 auto;
+}
+
+.footer #footer-header{
+    text-transform: uppercase;
+}
+
+.footer .footer-content{
+    padding: 2em 0;
+}
+
+.footer .footer-content p{
+    margin-bottom: 0;
+}
+
+.footer .footer-content .socials{
+    margin-bottom: 1rem;
+}
+
+.footer .footer-content .socials img{
+    width: 2rem;
+    height: 2rem;
+    margin: .3rem;
+}
+
+.footer-bottom{
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    font-size: .7em;
+    padding: .5rem;
+    max-width: 1700px;
+    margin: 0 auto;
+}
+
+.footer .info-box{
+    padding-bottom: 1rem;
+}
+
+.footer-bottom p{
+    margin-bottom: 0;
+}
+/*----------**Footer**----------*/
+
+/*----------**Matches**---------*/
+.matches-container{
+    background-color: #fff;
+}
+.matches-container .result-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e4e4e4;
+    width: inherit;
+    height: inherit;
+    padding: 10px 30px;
+    margin: 20px auto;
+}
+
+.matches-container .result-box p{
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.matches-container .result-box .match-type p{
+    font-size: 11px;
+}
+
+.matches-container .result-box .location-bottom p{
+    color: #999999;
+    font-size: 11px;
+}
+
+.matches-container .result-box h3{
+    font-family: 'Bebas Neue';
+    margin: 0;
+}
+
+.matches-container .result-box .match-result{
+    text-align: center;
+    position: relative;
+    margin: 0 auto;
+}
+
+.matches-container .result-box .scores-middle{
+    display: flex;
+    padding: 10px 0 6px 0;
+    text-align: center;
+    align-items: center;
+    margin: 0 auto;
+    position: relative;
+}
+
+.matches-container .result-box .scores-middle .team{
+    display: flex;
+    padding-right:10px;
+    align-items: center;
+}
+
+#teamName{
+    font-size: 1.6em;
+}
+
+.matches-container .result-box .scores-middle .team .score-box{
+    padding: 17px 17px;
+    color: #fff;
+    font-size: 2.2em;
+    line-height: 0;
+}
+
+.matches-container .team .s1{
+    background-color: #034D63;
+    margin-left: 10px;
+}
+
+.matches-container .team .s2 {
+    background-color: #7A7A7A;
+    margin-right: 10px;
+}
+
+.matches-container .tab-box{
+    width: 100%;
+}
+
+.matches-container .tab-box .tab{
+    width: 30px;
+    height: 3px;
+    background-color: #00FF6F;
+    margin: 0 auto;
+    margin-bottom: 7px;
+    position: relative;
+    right: 1%;
+    display: none;;
+}
+
+#match-date{
+    font-size: 11px;
+}
+/*----------**Matches**---------*/
+
+/*-----------**Teams**----------*/
+.teamsContainer{
+    background-color: #fff;
+}
+
+.positionsBox{
+    display: grid;
+}
+
+.teamsContainer p{
+    font-family: "Bebas Neue";
+    letter-spacing: 1px;
+}
+
+.teamsContainer .card{
+    background-color: #074253;
+    padding-bottom: 10px;
+    margin-bottom: 25px;
+}
+.teamsContainer .content .card-text{
+    margin:0;
+    padding-left: 20px;
+}
+
+.teamsContainer .content .card .info{
+    position: relative;
+    top: 50%;
+}
+
+.teamsContainer .content .card .number{
+    font-size: 4em;
+    font-family: "Bebas Neue";
+    padding-left: 20px;
+}
+
+.teamsContainer .content .card .name{
+    font-size: 1.9em;
+}
+
+.teamsContainer .content .card .position{
+    color: #00FF6F;
+    font-size: .9em; 
+}
+
+.teamsContainer .card .card-img{
+    position: relative;
+    
+}
+
+/*-----------**Teams**----------*/
+
+/*---------**Gallery**----------*/
+.gallery-container{
+    background-color: #fff;
+}
+.gallery-container .content{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gallery-container .content .img-Box{
+    text-align: center;
+}
+
+.gallery-container .content .img-Box img{
+    width: 91%;
+    margin-bottom: 25px;
+    object-fit: contain;
+    margin: 0 auto;
+}
+
+.galleryBox{
+    display: grid;
+}
+/*---------**Gallery**----------*/
+
+/*-----------**Shop**-----------*/
+.shop-container{
+    background-color: #fff;
+}
+.btn-order{
+    background-color: #034D63;
+    color: #fff;
+}
+
+.btn-order:hover{
+    background-color: #002530;
+    color: #fff;
+}
+/*-----------**Shop**-----------*/
+@media only screen and (max-width: 2561px) {
+    .container-xxl,
+    .container-xl,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container {
+        max-width: 1700px;
+    }
+
+    /*----- Navigation Bar -----*/
+    .navbar {
+        height: 4.4em;
+    }
+
+    .navbar.sticky {
+        height: 4em;
+    }
+
+    .navbar a {
+        font-size: 1.2em;
+        padding: 0 20px;
+    }
+
+    .navbar li {
+        padding: 0 20px;
+    }
+
+    .navbar .logo-img {
+        width: 2.8em;
+    }
+
+    .navbar.sticky .logo-img {
+        width: 2.8em;
+    }
+
+    /*----- Navigation Bar -----*/
+
+    /*-------**main formats**-------*/
+    .pageHeading{
+        padding-top: 50px;
+    }
+
+    .subHeadPadding{
+        padding-top: 30px;
+    }
+
+    .container{
+        padding: 4rem 0;
+    }
+
+    .founderImages {
+        background-color: #fff;
+        padding: 0;
+    }
+
+    .content{
+        max-width: 1600px;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    p{
+        font-size: 1em;
+        font-weight: 200;
+    }
+
+    .main-heading h1{
+        margin-bottom: 2rem;
+        letter-spacing: .1rem;
+        font-size: 2.3rem;
+    }
+
+    #fullStop{
+        font-size: 1.5em;
+    }
+
+    .btnAll{
+        padding: .2rem .5rem;
+        font-size: 1em;
+        border-radius: 7px;
+    }
+
+    .card-img, .card-img-bottom, .card-img-top {
+        width: 80%;
+        margin: 0 auto;
+    }
+    /*-------**main formats**-------*/
+
+    /*----------**Banner**----------*/
+    .banner-container {
+        height: 700px;
+    }
+
+    .banner-container .banner{
+        top: 200px;
+        max-width: 1200px;
+        width: 95%;
+    }
+
+    .banner-container .banner .text-box{
+        padding: 2rem 0;
+    }
+
+    .banner-container .banner .text-box h1{
+        letter-spacing: 0.3rem;
+        font-size: 3.5em;
+    }
+
+    .banner-container .banner .text-box h4 {
+        font-size: 1.3rem;
+    }
+    /*----------**Banner**----------*/
+
+    /*----------**AboutUs**---------*/
+    .aboutUs-container .abt-content{
+        margin-top: 0rem;
+    }
+
+    .aboutUs-container .abt-content .about-heading{
+        margin-bottom: 1rem;
+        font-size: 1.4em;
+    }
+
+    .aboutUs-container .img-box{
+        width: 80%;
+        left: 10%;
+    }
+
+    .motto h1{
+        font-size: 1.6em;
+    }
+
+    .commas{
+        margin: 0 .3rem;
+    }
+
+    .mission-container .mission{
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    /*----------**AboutUs**---------*/
+
+    /*---------**Supporter**--------*/
+    .supporter-container{
+        background-color: #fff;
+    }
+    .supporter-container .card{
+        width: 18rem;
+        padding: 0.5rem 1rem;
+        box-shadow: 0 4px 9px rgb(214, 214, 214);
+        margin: 0 auto;
+    }
+
+    .supporter-container .card:hover{
+        transition: all .3s ease-in-out;
+        box-shadow: 0 6px 17px rgb(214, 214, 214);  
+    }
+
+    .btnViewShop{
+        margin-top: 3em;
+    }
+
+    .products{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    /*---------**Supporter**--------*/
+
+    /*---------**FirstTeam**--------*/
+    .firstTeam-container .splide{
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+    /*---------**FirstTeam**--------*/
+
+    /*----------**Founder**---------*/
+    .founder-container h1{
+        border-bottom: 2px solid #00FF6F;
+        margin-bottom: 2rem;
+        width: 2%;
+    }
+
+    .founder-container .img-box {
+        position: relative;
+        width: 80%;
+        left: 10%;
+    }
+
+    .founder-container .img-box img {
+        width: 100%;
+    
+    }
+
+    .founderImages .img-box{
+        height: 20em;
+    }
+
+    .founderImages .img-box img{
+        height: 15em;
+        padding: 20px;
+        width: 80%;
+    }
+    /*----------**Founder**---------*/
+
+    /*----------**Footer**----------*/
+    .footer{
+        max-width: 1700px;
+        margin: 0 auto;
+    }
+
+    .footer .footer-content{
+        padding: 2em 0;
+    }
+
+    .footer .footer-content .socials{
+        margin-bottom: 1rem;
+    }
+
+    .footer .footer-content .socials img{
+        width: 2rem;
+        height: 2rem;
+        margin: .3rem;
+    }
+
+    .footer-bottom{
+        font-size: .7em;
+        padding: .5rem;
+        max-width: 1700px;
+        margin: 0 auto;
+    }
+
+    .footer .info-box{
+        padding-bottom: 1rem;
+    }
+
+    .footer #footer-header {
+    font-size: 1.2rem;
+    }
+    /*----------**Footer**----------*/
+
+    /*----------**Matches**---------*/
+    .matches-container .result-box{
+        padding: 10px 30px;
+        margin: 20px auto;
+    }
+
+    .matches-container .result-box p{
+        font-size: 12px;
+    }
+
+    .matches-container .result-box .match-type p{
+        font-size: 11px;
+    }
+
+    .matches-container .result-box .location-bottom p{
+        font-size: 11px;
+    }
+
+    .matches-container .result-box .scores-middle{
+        padding: 10px 0 6px 0;
+    }
+
+    .matches-container .result-box .scores-middle .team{
+        padding-right:10px;
+    }
+
+    #teamName{
+        font-size: 1.6em;
+    }
+
+    .matches-container .result-box .scores-middle .team .score-box{
+        padding: 26px 20px;
+        font-size: 2.2em;
+    }
+
+    .matches-container .team .s1{
+        margin-left: 10px;
+    }
+
+    .matches-container .team .s2 {
+        margin-right: 10px;
+    }
+
+    .matches-container .tab-box .tab{
+        width: 30px;
+        height: 3px;
+        margin-bottom: 7px;
+        right: 1%;
+    }
+
+    #match-date{
+        font-size: 11px;
+    }
+    /*----------**Matches**---------*/
+
+    /*-----------**Teams**----------*/
+    .teamsContainer p{
+        letter-spacing: 1px;
+    }
+
+    .positionsBox{
+        grid-template-columns: repeat(5, 1fr);
+    }
+
+    .teamsContainer .card{
+        padding-bottom: 10px;
+        margin-bottom: 25px;
+        width: 85%;
+    }
+
+    .teamsContainer .content .card-text{
+        padding-left: 13px;
+    }
+
+    .teamsContainer .content .card .number{
+        font-size: 3.3em;
+        padding-left: 13px;
+    }
+
+    .teamsContainer .content .card .name{
+        font-size: 1.3em;
+        position: relative;
+        top: -30px;
+    }
+
+    .teamsContainer .content .card .position{
+        font-size: .8em; 
+        position: relative;
+        top: -43px;
+    }
+
+    /*-----------**Teams**----------*/
+
+    /*---------**Gallery**----------*/
+    .gallery-container .content .img-Box img{
+        margin-bottom: 25px;
+    }
+    /*---------**Gallery**----------*/
+
+    /*---------**Stadium**----------*/
+    .stadium-container{
+        background-color: #fff;
+    }
+    .stadium-container .img-box{
+        width: 100%;
+        height: 70vh;
+        text-align: center;
+    }
+
+    .stadium-container .img-box img{
+        width: 100%;
+        height: 70vh;
+        object-fit: cover;
+    }
+
+    .stadium-container .stadium-title{
+        position: relative;
+        width: 100%;
+        text-align: center;
+    }
+
+    .stadium-container .stadium-title h4{
+        background-color: #ebebeb;
+        width: 20%;
+        margin: 0 auto;
+        position: relative;
+        top: -30px;
+        padding: 20px;
+    }
+
+    .stadium-content{
+        display: flex;
+    }
+
+    .stadium-container .stadium-img{
+        width: 50%;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .stadium-container .stadium-img img{
+        width: 90%;
+        margin-bottom: 30px;
+    }
+
+    .stadium-container .location{
+        width: 50%;
+    }
+
+    .stadium-container .location iframe{
+        width: 95%;
+    }
+    
+    /*---------**Stadium**----------*/
+
+    .shop-container .card{
+        width: 74%;
+        margin: 0 auto;
+        padding: 9px;
+    }
+
+    .price{
+        font-size: 1.2rem;
+    }
+
+    .productsBx{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .btn{
+        padding: 3px;
+        font-size: .7rem;
+    }
+
+    .card .card-title{
+        font-size: .9rem;
+    }
+
+    .galleryBox{
+        grid-template-columns: repeat(6,1fr);
+    }
+}
+
+
+@media only screen and (max-width: 1440px) {
+    .container-xxl,
+        .container-xl,
+        .container-lg,
+        .container-md,
+        .container-sm,
+        .container {
+            max-width: inherit; 
+        }
+    /*----- Navigation Bar -----*/
+    .navbar a {
+        font-size: 16px;
+        padding: 5px 14px;
+    }
+
+    .navbar li {
+        padding: 0 7px;
+    }
+
+    .navbar .logo-img {
+        width: 3.2em;
+        padding: 3px 0;
+    }
+
+    .navbar {
+        height: 3.8em;
+    }
+
+    .navbar.sticky {
+        height: 3.8em;
+        box-shadow: 0 1px 9px rgb(78, 78, 78);
+    }
+
+    .navbar.sticky .logo-img {
+        width: 3.2em;
+    }
+
+    /*----- Navigation Bar -----*/
+    /*-------**main formats**-------*/
+    .row{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .container{
+        padding: 3.6rem 0;
+    }
+
+    .content{
+        max-width: inherit;
+        width: 98%;
+    }
+
+    .main-heading h1{
+        font-size: 2.1rem;
+    }
+
+    .btnAll{
+        padding: .3rem .5rem;
+        font-size: 0.9em;
+    }
+    /*-------**main formats**-------*/
+
+    /*----------**Banner**----------*/
+    .banner-container {
+        height: 520px;
+    }
+
+    .banner-container .banner{
+        top: 130px;
+        max-width: 840px;
+        width: 90%;
+    }
+
+    .banner-container .banner .text-box{
+        padding: 2rem 0;
+    }
+
+    .banner-container .banner .text-box h1{
+        letter-spacing: 0.3rem;
+        font-size: 2.8em;
+    }
+
+    .banner-container .banner .text-box h4{
+        font-size: 1.1rem;
+    }
+    /*----------**Banner**----------*/
+
+    /*----------**AboutUs**---------*/
+    .aboutUs-container .abt-content .about-heading{
+        margin-bottom: 1rem;
+        font-size: 1.4em;
+    }
+
+    .aboutUs-container .img-box{
+        width: 85%;
+        left: 12%;
+    }
+
+    .motto h1{
+        font-size: 1.6em;
+    }
+    /*----------**AboutUs**---------*/
+
+    /*---------**Supporter**--------*/
+    .supporter-container{
+        background-color: #fff;
+    }
+    .supporter-container .card{
+        width: 90%;
+        padding: 0.5rem 2rem;
+    }
+
+    .card .card-title{
+        font-size: 1.1rem;
+    }
+
+    .btnViewShop{
+        margin-top: 3em;
+    }
+    /*---------**Supporter**--------*/
+
+    /*---------**FirstTeam**--------*/
+
+    .firstTeam-container .splide{
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+    /*---------**FirstTeam**--------*/
+
+    /*----------**Founder**---------*/
+    .founder-container h4{
+        font-size: 1.4rem;
+    }
+
+    .founder-container .img-box {
+        width: 85%;
+    }
+
+    .founderImages{
+        padding: 0;
+    }
+
+    .founderImages .img-box{
+        height: 15em;
+        grid-template-columns: repeat(4, 1fr);
+        
+    }
+
+    .founderImages .img-box img{
+        height: 13em;
+        padding: 20px;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .mission-container .mission{
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    /*----------**Founder**---------*/
+
+    /*----------**Footer**----------*/
+    .footer{
+        max-width: 1700px;
+        margin: 0 auto;
+    }
+
+    .footer-bottom{
+        font-size: .7em;
+        padding: .4rem;
+        max-width: inherit;
+    }
+
+    .footer #footer-header{
+        font-size:  0.9rem;
+    }
+
+    .footer h5{
+        font-size: 1rem;
+    }
+    /*----------**Footer**----------*/
+
+    /*----------**Matches**---------*/
+    .matches-container .result-box{
+        padding: 10px 30px;
+        margin: 20px auto;
+    }
+
+    .matches-container .result-box p{
+        font-size: 12px;
+    }
+
+    .matches-container .result-box .match-type p{
+        font-size: 11px;
+    }
+
+    .matches-container .result-box .location-bottom p{
+        font-size: 11px;
+    }
+
+    .matches-container .result-box .scores-middle{
+        padding: 10px 0 6px 0;
+    }
+
+    .matches-container .result-box .scores-middle .team{
+        padding-right:10px;
+    }
+
+    #teamName{
+        font-size: 1.6em;
+    }
+
+    .matches-container .result-box .scores-middle .team .score-box{
+        padding: 27px 23px;
+        font-size: 2em;
+    }
+
+    .stadium-container .stadium-title h4 {
+        padding: 9px;
+        width: 20%;
+        font-size: 1.1rem;
+    }
+
+    .stadium-container .img-box{
+        width: 100%;
+        height: 90vh;
+    }
+
+    .stadium-container .img-box img{
+        width: 100%;
+        height: 90vh;
+    }
+
+    .matches-container .team .s1{
+        margin-left: 10px;
+    }
+
+    .matches-container .team .s2 {
+        margin-right: 10px;
+    }
+
+    .matches-container .tab-box .tab{
+        width: 30px;
+        height: 3px;
+        margin-bottom: 7px;
+        right: 1%;
+    }
+
+    #match-date{
+        font-size: 11px;
+    }
+    /*----------**Matches**---------*/
+
+    /*-----------**Teams**----------*/
+    .teamsContainer .card{
+        padding: 10px;
+        padding-bottom: 10px;
+        margin-bottom: 15px;
+        width: 90%;
+        height: 92%;
+    }
+
+    .teamsContainer .content .card-text{
+        padding-left: 4px;
+    }
+
+    .teamsContainer .content .card .number{
+        font-size: 2.2em;
+        padding-left: 4px;
+    }
+
+    .teamsContainer .content .card .name{
+        font-size: 1.2em;
+        position: relative;
+        top: -24px;
+    }
+
+    .teamsContainer .content .card .position{
+        font-size: .6em; 
+        position: relative;
+        top: -36px;
+    }
+
+    /*-----------**Teams**----------*/
+    .stadium-container .stadium-title h4{
+        background-color: #ebebeb;
+        margin: 0 auto;
+        position: relative;
+        top: -30px;
+        padding: 13px 6px;
+    }
+    /*---------**Stadium**----------*/
+    .firstTeam-container {
+        background-position: center;
+    }
+
+    .btn{
+        padding: 3px;
+        font-size: .6rem;
+    }
+
+    .card .card-title{
+        font-size: 1rem;
+    }
+
+    .card .price{
+        font-size: .8rem;
+    }
+
+    .galleryBox{
+        grid-template-columns: repeat(5,1fr);
+    }
+
+    
+}
+
+@media only screen and (max-width: 1024px) {
+    /*----- Navigation Bar -----*/
+    .navbar.sticky .logo-box {
+        width: 3.5em;
+        background-size: contain;
+    }
+
+    .navbar.sticky .logo-img {
+        width: 2.2em;
+    }
+
+    .navbar .logo-img {
+        width: 2.2em;
+    }
+
+    .navbar {
+        height: 3.6em;
+    }
+
+    .navbar.sticky {
+        height: 3.7em;
+    }
+
+    .navbar.sticky ul li a,
+    .navbar ul li a {
+        font-size: 1em;
+        padding: 10px;
+    }
+
+    .navbar .socials-container .socials-box {
+        width: 1.4rem;
+        height: 1.4rem;
+        margin-left: .7rem;
+    }
+    /*----- Navigation Bar -----*/
+    /*-------**main formats**-------*/
+    .container{
+        padding: 3.4rem 0;
+    }
+
+    .main-heading h1{
+        font-size: 2.1rem;
+    }
+
+    .btnAll{
+        font-size: 0.7em;
+    }
+
+    p{
+        font-size: .9rem;
+    }
+    /*-------**main formats**-------*/
+    /*----------**Banner**----------*/
+    .banner-container {
+        height: 520px;
+    }
+
+    .banner-container .banner{
+        top: 130px;
+        max-width: 600px;
+        width: 90%;
+    }
+
+    .banner-container .banner .text-box{
+        padding: 1.8rem 0;
+    }
+
+    .banner-container .banner .text-box h1{
+        font-size: 2em;
+    }
+
+    .banner-container .banner .text-box h4{
+        font-size: 1rem;
+    }
+    /*----------**Banner**----------*/
+
+    .stadium-container .img-box{
+        width: 100%;
+        height: 50vh;
+    }
+
+    .stadium-container .img-box img{
+        width: 100%;
+        height: 50vh;
+    }
+
+    .stadium-container .stadium-title{
+        position: relative;
+        width: 100%;
+        top: -1rem;
+    }
+
+    .stadium-container .stadium-title h4{
+        width: 30%;
+        padding: 20px 12px;
+        font-size: 1.4rem;
+    }
+
+    .stadium-container .stadium-img img{
+        width: 93%;
+        margin-bottom: 20px;
+    }
+
+    .stadium-container .location iframe{
+        width: 100%;
+        height: 94%;
+    }
+    
+    /*---------**Stadium**----------*/
+    /*----------**AboutUs**---------*/
+    .aboutUs-container .abt-content{
+        margin-top: 0rem;
+    }
+
+    .aboutUs-container .abt-content .about-heading{
+        margin-bottom: 0.8rem;
+        font-size: 1.1em;
+    }
+
+    .aboutUs-container .img-box{
+        width: 90%;
+        left: 0%;
+    }
+
+    .aboutUs-container .img-box img{
+        margin: 0 auto;
+    }
+
+    .motto h1{
+        font-size: 1.3em;
+    }
+    /*----------**AboutUs**---------*/
+    /*---------**Supporter**--------*/
+    .supporter-container .card{
+        width: 92%;
+        padding: 0.3rem;
+        margin-bottom: 30px;
+    }
+
+    .supporter-container .card-body{
+        padding: 3px;
+    }
+
+    .card .card-title{
+        font-size: 0.9rem;
+    }
+
+    .btnViewShop{
+        margin-top: .5em;
+    }
+    /*---------**Supporter**--------*/
+    /*----------**Founder**---------*/
+    .founder-container h4{
+        font-size: 1.1rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .founder-container .img-box {
+        width: 90%;
+        left: 0%;
+    }
+
+    .founderImages{
+        padding: 0;
+    }
+
+    .founderImages .img-box{
+        height: 15em;
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .founderImages .img-box img{
+        height: 12em;
+        padding: 20px;
+        width: 80%;
+        margin: 0 auto;
+    }
+    /*----------**Founder**---------*/
+    /*----------**Matches**---------*/
+    .matches-container .result-box{
+        padding: 10px 30px;
+        margin: 20px auto;
+    }
+
+    .matches-container .result-box p{
+        font-size: 11px;
+    }
+
+    .matches-container .result-box .match-type p{
+        font-size: 10px;
+    }
+
+    .matches-container .result-box .location-bottom p{
+        font-size: 10px;
+    }
+
+    .matches-container .result-box .scores-middle{
+        padding: 10px 0 6px 0;
+    }
+
+    .matches-container .result-box .scores-middle .team{
+        padding-right:10px;
+    }
+
+    #teamName{
+        font-size: 1.3em;
+    }
+
+    .matches-container .result-box .scores-middle .team .score-box{
+        padding: 17px 12px;
+        font-size: 1.5em;
+        align-items: center;
+    }
+
+    .matches-container .team .s1{
+        margin-left: 10px;
+    }
+
+    .matches-container .team .s2 {
+        margin-right: 10px;
+    }
+
+    .matches-container .tab-box .tab{
+        width: 30px;
+        height: 3px;
+        margin-bottom: 7px;
+        right: 1%;
+    }
+
+    #match-date{
+        font-size: 10px;
+    }
+    /*----------**Matches**---------*/
+    /*-----------**Teams**----------*/
+    .teamsContainer .card{
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 10px;
+        margin-bottom: 25px;
+        width: 90%;
+        height: 89%;
+        padding: 7px;
+    }
+
+    .teamsContainer .content .card-text{
+        padding-left: 2px;
+    }
+
+    .teamsContainer .content .card .number{
+        font-size: 1.7em;
+        padding-left: 2px;
+    }
+
+    .teamsContainer .content .card .name{
+        font-size: 0.8em;
+        position: relative;
+        top: -20px;
+    }
+
+    .teamsContainer .content .card .position{
+        font-size: .5em; 
+        position: relative;
+        top: -30px;
+    }
+
+    /*-----------**Teams**----------*/
+    .shop-container .card {
+        width: 95%;
+        padding: 4px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    .btn{
+        padding: 3px;
+        font-size: .5rem;
+    }
+
+     .galleryBox{
+        grid-template-columns: repeat(4,1fr);
+    }
+}
+
+
+@media only screen and (max-width: 768px) {
+    /*----- Navigation Bar -----*/
+    .hamburger {
+        display: initial;
+    }
+
+    .navbar .navbar-nav {
+        position: fixed;
+        left: -100%;
+        top: 7rem;
+        flex-direction: column;
+        background-color: #002530;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s all ease-in-out;
+        z-index: 999;
+        padding: 0;
+    }
+
+    .navbar.sticky a,
+    .navbar a {
+        color: #fff;
+    }
+
+    .navbar .navbar-nav .nav-link{
+        padding: 20px;
+    }
+
+    .navbar.sticky .nav-menu a:hover,
+    .navbar a {
+        color: #fff;
+
+    }
+
+    .navbar.sticky .logo-box {
+        width: 4em;
+        background-size: contain;
+    }
+
+    .navbar.sticky .logo-img {
+        width: 2em;
+    }
+
+    .navbar .logo-img {
+        width: 2em;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .navbar .navbar-nav {
+        top: 4em;
+    }
+
+    .nav-menu.active {
+        height: initial;
+    }
+
+    .navbar {
+        height: 3.7em;
+        width: 100%;
+        border-radius: 0;
+        top: 0;
+    }
+
+    .navbar.sticky {
+        height: 3.8em;
+    }
+
+    .navbar.sticky ul li a,
+    .navbar ul li a {
+        font-size: 0.9em;
+        padding: 10px;
+    }
+
+    .bar:nth-child(1) {
+        width: 25px;
+        height: 2px;
+    }
+
+    .bar:nth-child(2) {
+        width: 20px;
+        height: 2px;
+    }
+
+    .bar:nth-child(3) {
+        width: 25px;
+        height: 2px;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(7px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-7px) rotate(-45deg);
+    }
+
+    .navbar .navbar-nav .shopItem {
+        background-color: inherit;
+        border: none;
+    }
+
+    .navbar .navbar-nav .nav-link:hover {
+        color: #e7e7e7;
+        border-bottom: none;
+    }
+
+    .navbar .socials-container img{
+        display: none;
+    }
+    /*------------ Navigation Bar ---------*/
+    /*-------**main formats**-------*/
+    .card-img, .card-img-bottom, .card-img-top {
+        width: 80%;
+        margin: 0 auto;
+    }
+    .container{
+        padding: 3.4rem 0;
+    }
+
+     .galleryBox{
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    .main-heading h1{
+        font-size: 1.9rem;
+        margin-left: 10px;
+    }
+
+    .btnAll{
+        font-size: 0.6rem;
+        padding: 6px;
+    }
+
+    .content{
+        width:99%;
+    }
+    /*-------**main formats**-------*/
+    /*----------**Banner**----------*/
+    .banner-container {
+        height: 500px;
+    }
+
+    .banner-container .banner{
+        top: 160px;
+        max-width: 500px;
+    }
+
+    .banner-container .banner .text-box{
+        padding: 1.1rem 0;
+    }
+
+    .banner-container .banner .text-box h1{
+        font-size: 1.8em;
+        margin-bottom: .2rem;
+    }
+
+    .banner-container .banner .text-box h4{
+        font-size: .8rem;
+    }
+    /*----------**Banner**----------*/
+    
+    /*----------**AboutUs**---------*/
+    .aboutUs-container .abt-content .about-heading{
+        margin-bottom: 0.8rem;
+        font-size: 1.2em;
+    }
+
+    .aboutUs-container .img-box{
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .motto h1{
+        font-size: 1.1em;
+    }
+
+    .aboutUs-container .img-box img {
+        width: 100%;
+        margin: 0 auto;
+    }
+    /*----------**AboutUs**---------*/
+
+    /*---------**Stadium**----------*/
+    .stadium-container .img-box{
+        width: 100%;
+        height: 50vh;
+    }
+
+    .stadium-container .img-box img{
+        width: 100%;
+        height: 50vh;
+    }
+
+    .stadium-container .stadium-title{
+        position: relative;
+        width: 100%;
+    }
+
+    .stadium-container .stadium-title h4{
+        background-color: #ebebeb;
+        width: 35%;
+        top: -15px;
+        padding: 12px 10px;
+        font-size: 1.1rem;
+    }
+
+    .stadium-content{
+        display: grid;
+    }
+
+    .stadium-container .stadium-img{
+        width: 100%;
+    }
+
+    .stadium-container .stadium-img img{
+        width: 100%;
+        padding: 10px;
+        padding-bottom: 0;
+    }
+
+    .stadium-container .location{
+        width: 100%;
+    }
+
+    .stadium-container .location iframe{
+        width: 100%;
+    }
+    
+    /*---------**Stadium**----------*/
+    /*---------**Supporter**--------*/
+    .supporter-container .card{
+        width: 90%;
+        padding: 0;
+        margin-bottom: 30px;
+    }
+
+    .card .card-title{
+        font-size: 0.8rem;
+    }
+
+    .card .price{
+        font-size: .7rem;
+    }
+
+    .btnViewShop{
+        margin-top: .5em;       
+        font-size: 0.56rem;
+        padding: 4px;
+            
+    }
+    /*---------**Supporter**--------*/
+    /*----------**Founder**---------*/
+    .founder-container h4{
+        font-size: 1.2rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .founder-container .img-box {
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+
+    .founderImages{
+        padding: 0;
+    }
+
+    .founderImages .img-box{
+        height: auto;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .founderImages .img-box img{
+        height: auto;
+        padding: 20px;
+        width: 90%;
+    }
+
+    .mission-container .mission {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    /*----------**Founder**---------*/
+    /*----------**Matches**---------*/
+    .matches-container .result-box{
+        padding: 10px 30px;
+        margin: 11px auto;
+    }
+
+    .matches-container .result-box p{
+        font-size: 11px;
+    }
+
+    .matches-container .result-box .match-type p{
+        font-size: 9px;
+    }
+
+    .matches-container .result-box .location-bottom p{
+        font-size: 9px;
+    }
+
+    .matches-container .result-box .scores-middle{
+        padding: 10px 0 6px 0;
+    }
+
+    .matches-container .result-box .scores-middle .team{
+        padding-right:10px;
+    }
+
+    #teamName{
+        font-size: 1.1em;
+    }
+
+    .matches-container .result-box .scores-middle .team .score-box{
+        padding: 15px 11px;
+        font-size: 1.4em;
+        align-items: center;
+    }
+
+    .matches-container .team .s1{
+        margin-left: 10px;
+    }
+
+    .matches-container .team .s2 {
+        margin-right: 10px;
+    }
+
+    .matches-container .tab-box .tab{
+        width: 30px;
+        height: 3px;
+        margin-bottom: 7px;
+        right: 1%;
+    }
+
+    #match-date{
+        font-size: 10px;
+    }
+    /*----------**Matches**---------*/
+    /*-----------**Teams**----------*/
+    .teamsContainer .card{
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 10px;
+        margin-bottom: 25px;
+        width: 90%;
+        height: 90%;
+        padding: 7px;
+    }
+
+    .teamsContainer .content .card-text{
+        padding-left: 2px;
+    }
+
+    .teamsContainer .content .card .number{
+        font-size: 1.7em;
+        padding-left: 2px;
+    }
+
+    .teamsContainer .content .card .name{
+        font-size: 0.8em;
+        position: relative;
+        top: -12px;
+    }
+
+    .teamsContainer .content .card .position{
+        font-size: .5em; 
+        position: relative;
+        top: -20px;
+    }
+
+    /*-----------**Teams**----------*/
+    .shop-container .card {
+        width: 95%;
+        padding: 9px 20px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    .btn{
+        font-size: 0.56rem;
+        padding: 2px;
+    }
+
+    .row>* {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 100%;
+        padding-right: calc(var(--bs-gutter-x) * .3); 
+        padding-left: calc(var(--bs-gutter-x) * .3);
+    }
+    .positionsBox {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .card-body{
+        padding-left: 2px;
+    }
+    
+}
+
+
+
+@media only screen and (max-width: 650px){
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .productsBx{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .positionsBox{
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    .stadium-container .stadium-title h4{
+        background-color: #ebebeb;
+        width: 35%;
+        top: -15px;
+        padding: 12px 10px;
+        font-size: 1.1rem;
+    }
+
+    .stadium-container .stadium-img{
+        width: 100%;
+    }
+
+    .stadium-container .stadium-img img{
+        width: 100%;
+        padding: 10px;
+        padding-bottom: 0;
+    }
+
+    .stadium-container .location{
+        width: 100%;
+    }
+
+    .stadium-container .location iframe{
+        width: 100%;
+        height: 360px;
+    }
+    
+    /*---------**Stadium**----------*/
+}
+
+@media only screen and (max-width: 455px){
+    .stadium-container .stadium-title h4{
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 600px){
+
+    .positionsBox {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    /*----- Navigation Bar -----*/
+    .navbar .navbar-nav {
+        top: 4em;
+    }
+
+    .nav-menu.active {
+        height: initial;
+    }
+
+    .navbar.sticky .logo-img {
+        width: 1.7em;
+    }
+
+    .navbar .logo-img {
+        width: 1.7em;
+    }
+
+    .navbar {
+        height: 3.8em;
+    }
+
+    .navbar.sticky {
+        height: 3.3em;
+    }
+
+    .navbar.sticky ul li a,
+    .navbar ul li a {
+        font-size: 0.9em;
+        padding: 10px;
+    }
+
+    .bar:nth-child(1) {
+        height: 1px;
+        width: 13px;
+    }
+
+    .bar:nth-child(2) {
+        height: 1px;
+        width: 10px;
+    }
+
+    .bar:nth-child(3) {
+        height: 1px;
+        width: 13px;
+    }
+
+    .bar {
+        margin: 3px auto;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(4.2px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-4.2px) rotate(-45deg);
+    }
+
+    /*----- Navigation Bar -----*/
+    .stadium-container .img-box{
+        width: 100%;
+        height: 30vh;
+    }
+
+    .stadium-container .img-box img{
+        width: 100%;
+        height: 30vh;
+    }
+
+    .stadium-container .stadium-title h4{
+        background-color: #ebebeb;
+        width: 40%;
+        top: -1px;
+        padding: 12px 1px;
+        font-size: .8rem;
+    }
+
+     .stadium-container .location iframe{
+        width: 100%;
+        height: 250px;
+    }
+    .banner-container {
+        height: 400px;
+    }
+    .banner-container .banner .text-box h4 {
+        font-size: .5rem;
+    }
+    .aboutUs-container .abt-content .about-heading {
+        margin-bottom: 0.8rem;
+        font-size: .8em;
+    }
+
+    .founder-container h4 {
+        font-size: .8rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .products {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .positionsBox{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .btn {
+        font-size: 0.5rem;
+        padding: 2px;
+    }
+
+     .galleryBox{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .founderImages .img-box img {
+        height: auto;
+        padding: 10px;
+        width: 98%;
+    }
+    .matches-container .result-box {
+        padding: 10px 20px;
+        margin: 10px auto;
+    }
+    #teamName {
+        font-size: 0.8em;
+    }
+
+    #match-date {
+        font-size: 9px;
+    }
+
+    .matches-container .result-box .scores-middle .team .score-box {
+        padding: 12px 9px;
+        font-size: 1.1em;
+    }
+
+    .matches-container .result-box .match-type p {
+        font-size: 8px;
+    }
+
+    .matches-container .result-box .location-bottom p {
+    font-size: 8px;
+    }
+
+    .main-heading h1 {
+        margin-bottom: 1rem;
+    }
+
+    .container{
+        padding: 2rem 0;
+    }
+    .banner-container .banner .text-box h1 {
+        font-size: 1.1em;
+        margin-bottom: .2rem;
+    }
+
+    .card .card-title {
+    font-size: 0.8rem;
+    }
+
+    .content{
+        width: 100%;
+    }
+
+    p{
+        font-size: 0.7em;
+    }
+
+    .motto h1{
+        font-size: .9em;
+    }
+
+    .mission-container .mission{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .main-heading h1{
+        font-size: 1.6rem;
+    }
+
+    .card .card-title{
+        font-size: .7rem;
+    }
+
+    .card .price {
+    font-size: .65rem;
+    }
+
+    .footer #footer-header {
+    font-size: .7rem;
+    }
+
+    .footer h5 {
+    font-size: .7rem;
+    }
+
+    .footer .footer-content p {
+        font-size: .6rem;
+    }
+
+    .footer-bottom p {
+        font-size: .5rem;
+    }
+
+    .card-img, .card-img-bottom, .card-img-top {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .btnViewShop {
+    margin-top: 0;
+    }
+
+    .navbar .navbar-logo img {
+    width: 2.5rem;
+    height: 2.5rem;
+    object-fit: contain;
+    }
+
+    .teamsContainer .card{
+        width: 95%;
+    }
+
+
+    .teamsContainer .content .card .name {
+        position: relative;
+        top: -12px;
+        font-size: .9rem;
+    }
+
+    .teamsContainer .content .card .position {
+        position: relative;
+        top: -21px;
+        font-size: .6rem;
+    }
+
+    .row>* {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 100%;
+        padding-right: calc(var(--bs-gutter-x) * .2); 
+        padding-left: calc(var(--bs-gutter-x) * .2);
+    }
+
+    .founderImages {
+        padding: 0;
+    }
+
+    .firstTeam-container{
+        background-position: center;
+    }
+}
+
+
+@media only screen and (max-width: 375px) {
+.banner-container .banner .text-box h1 {
+        font-size: .9em;
+        margin-bottom: .2rem;
+    }
+
+         .galleryBox {
+             grid-template-columns: repeat(1, 1fr);
+         }
+
+    .btn {
+        font-size: 0.4rem;
+        padding: 2px;
+    }
+
+    .card-body{
+        padding-bottom: 0;
+        padding-top: 7px;
+        padding-left: 2px;
+    }
+
+    .main-heading h1{
+        font-size: 1.3rem;
+    }
+
+    .motto h1{
+        font-size: 1em;
+    }
+
+     .card .card-title{
+        font-size: .7rem;
+    }
+
+    .teamsContainer .content .card .number {
+        font-size: 1.9em;
+    }
+
+    .teamsContainer .content .card .name {
+        font-size: 1.3em;
+        position: relative;
+        top: 13px;
+    }
+
+    .stadium-container .stadium-title h4{
+        background-color: #ebebeb;
+        width: 39%;
+        top: -15px;
+        padding: 9px 10px;
+        font-size: .7rem;
+    }
+
+    .stadium-container .stadium-img img{
+        margin-bottom: 0;
+        padding: 4px;
+    }
+
+    .stadium-container .location{
+        margin-top: 20px;
+    }
+
+    .teamsContainer .content .card .position {
+        font-size: .8em;
+        position: relative;
+        top: -1px;
+    }
+
+    .motto h1 {
+        font-size: 0.7em;
+    }
+
+    .founderImages .img-box img {
+        height: auto;
+        padding: 15px;
+        width: 100%;
+        height: 98%;
+    }
+
+    #teamName {
+        font-size: 0.7em;
+    }
+
+    .matches-container .result-box .scores-middle .team .score-box {
+        padding: 11px 8px;
+        font-size: .9em;
+    }
+
+    .matches-container .result-box .match-type p {
+        font-size: 7px;
+    }
+
+    .matches-container .result-box .location-bottom p {
+        font-size: 7px;
+    }
+
+    .matches-container .result-box .scores-middle {
+        padding: 5px 0 6px 0;
+    }
+
+    #match-date {
+        font-size: 8px;
+    }    
+
+    .row>* {
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 100%;
+        padding-right: calc(var(--bs-gutter-x) * .2); 
+        padding-left: calc(var(--bs-gutter-x) * .2);
+    }
+
+    .matches-container .result-box {
+        padding: 10px 20px;
+        margin: 6px auto;
+    }
+
+    .positionsBox{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .btnAll {
+    font-size: 0.5rem;
+    padding: 4px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .products {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .navbar .navbar-nav .nav-link {
+            padding: 3px 1rem;
+            font-size: .7em;
+    }
+    .banner-container .banner .text-box h1 {
+        font-size: .9em;
+        margin-bottom: .2rem;
+        letter-spacing: .1rem;
+    }
+    .main-heading h1{
+        font-size: 1.2rem;
+    }
+
+    .motto h1{
+        font-size: .7em;
+    }
+
+     .card .card-title{
+        font-size: .6rem;
+    }
+
+    .founder-container h4 {
+        font-size: .8rem;
+    }
+
+    .aboutUs-container .abt-content .about-heading {
+        font-size: .8rem;
+    }
+    
+    .btnAll {
+    font-size: 0.5rem;
+    padding: 6px;
+    }
+
+    .teamsContainer .content .card .number {
+        font-size: 1.8em;
+    }
+
+    .teamsContainer .content .card .name {
+        font-size: 1.1em;
+        position: relative;
+        top: 6px;
+    }
+
+    .teamsContainer .content .card .position {
+        font-size: .6em;
+        position: relative;
+        top: -6px;
+    }
+
+    #teamName {
+        font-size: 0.7em;
+    }
+
+    .matches-container .result-box .scores-middle .team .score-box {
+        padding: 10px 8px;
+        font-size: .8em;
+    }
+
+    .matches-container .result-box .match-type p {
+        font-size: 6px;
+    }
+
+    .matches-container .result-box .location-bottom p {
+        font-size: 6px;
+    }
+
+    .matches-container .result-box .scores-middle {
+        padding: 5px 0 6px 0;
+    }
+
+    #match-date {
+        font-size: 7px;
+    }
+    
+    .footer #footer-header {
+        font-size: .6rem;
+    }
+
+    .footer h5 {
+        font-size: .6rem;
+    }
+
+    .footer .footer-content p {
+        font-size: .5rem;
+    }
+
+        /*---------**Gallery**----------*/
+        .gallery-container .content .img-Box img {
+            margin-bottom: 25px;
+        }
+    
+        /*---------**Gallery**----------*/
+    
+    /*---------**Stadium**----------*/  
+    .stadium-container .img-box{
+        width: 100%;
+        height: 50vh;
+    }
+
+    .stadium-container .img-box img{
+        width: 100%;
+        height: 50vh;
+    }     
+    .stadium-content {
+        display: grid;
+    }
+
+    .stadium-container .stadium-title h4{
+        padding: 9px 1px;
+        width: 49%;
+        top: 2px;
+        font-size: .7rem;
+    }
+    
+    .stadium-container .stadium-img {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+    
+    .stadium-container .stadium-img img {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 0px;
+    }
+
+    .stadium-container .location iframe {
+        width: 100%;
+    }
+
+    /*---------**Stadium**----------*/
+
+    .shop-container .card{
+        padding: 9px;
+    }
+
+}
+
+@media only screen and (max-width:280px) {
+    
+}
